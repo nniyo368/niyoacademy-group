@@ -1,0 +1,229 @@
+
+<html lang="rw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niyo Academy Group</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Murakaza neza kuri Niyo Academy Group</h1>
+   
+  </header>
+
+
+
+
+</body>
+<script src="script.js"></script>
+</body>
+</html>
+
+</html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niyo Academy Group</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* navigation bar */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    /* menu icon (⋮) */
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+        <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Programs</a>
+    <a href="#">Contact</a>
+  </nav>
+    }
+
+    /* hidden menu links */
+    .menu-links {
+      display: blue;
+      position: absolute;
+      right: 20px;
+      top: 50px;
+      background: #333;
+      border-radius: 5px;
+      overflow: hidden;
+       <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Programs</a>
+    <a href="#">Contact</a>
+  </nav>
+    }
+
+    .menu-links a {
+      display: blue;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+    }
+
+    .menu-links a:hover {
+      background: #575757;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <div class="navbar">
+    <div class="logo">Niyo Academy</div>
+    <div class="menu-icon" onclick="toggleMenu()">⋮</div>
+  </div>
+  
+
+
+  <div style="padding:20px">
+    <h2>Murakaza neza kuri Niyo Academy Group</h2>
+    <p>Tugufasha kubona ibibazo,ibitabo,ndetse na notes n'ibizamini bya leta bigufasha gusubiramo amasomo yawe no kukwagurira uburyo bw'imitekerereze.</p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuLinks");
+      if (menu.style.display === "blue and white") {
+        menu.style.display = "blue and white";
+      } else {
+        menu.style.display = "blue anf white";
+      }
+    }
+  </script>
+
+</body>
+</html>
+<section id="program">
+  <style>
+    .program {
+      max-width: 900px; margin: 0 auto; padding: 20px;
+    }
+    .program h2 { text-align: center; margin-bottom: 10px; }
+    .note { background:#fff5cc; border-left:4px solid #f2b700; padding:10px; margin:10px 0; font-size:14px; }
+    .accordion { border:1px solid #ddd; border-radius:10px; overflow:hidden; margin:12px 0; }
+    .acc-head { background:#333; color:#fff; padding:14px 16px; cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
+    .acc-body { display:none; background:#fafafa; padding:14px 16px; }
+    .acc-body h4 { margin:10px 0 6px; }
+    .badge { display:inline-block; background:#e8eefc; border:1px solid #cfe; padding:2px 8px; border-radius:12px; font-size:12px; margin-left:8px; }
+    ul { margin: 6px 0 12px 20px; }
+    .small { font-size:13px; color:#444; }
+  </style>
+
+  <div class="program">
+    <h2>Programs & Subjects (National Exams)</h2>
+    <div class="note">
+      <strong>Note:</strong> Ibizamini bya Leta bibera ku rwego rwa <strong>P6</strong>, <strong>S3 (O-Level)</strong>, na <strong>S6 (A-Level)</strong>. 
+      Andi masomo(P1–P5, S1–S2, S4–S5) ni ibizamini by’ishuri (school-based).
+    </div>
+
+    <!-- PRIMARY P1–P6 -->
+    <div class="accordion">
+      <div class="acc-head" onclick="this.nextElementSibling.style.display = (this.nextElementSibling.style.display==='block'?'none':'block')">
+        PRIMARY (P1 – P6) <span>▼</span>
+      </div>
+      <div class="acc-body">
+        <h4>P1 – P5 <span class="badge">School-based</span></h4>
+        <p class="small">Amasomo rusange yigishwa:</p>
+        <ul>
+          <li>Kinyarwanda, English</li>
+          <li>Mathematics</li>
+          <li>Science & Elementary Technology (SET)</li>
+          <li>Social Studies & Religious Education (SRE)</li>
+          <li>ICT, Creative Arts, Physical Education</li>
+        </ul>
+
+        <h4>P6 – National Examination</h4>
+        <p class="small">Amasomo akorwa mu bizamini bya Leta (P6):</p>
+        <ul>
+          <li>Kinyarwanda</li>
+          <li>English</li>
+          <li>Mathematics</li>
+          <li>Science & Elementary Technology (SET)</li>
+          <li>Social Studies & Religious Education (SRE)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- O-LEVEL S1–S3 -->
+    <div class="accordion">
+      <div class="acc-head" onclick="this.nextElementSibling.style.display = (this.nextElementSibling.style.display==='block'?'none':'block')">
+        O-LEVEL (S1 – S3) <span>▼</span>
+      </div>
+      <div class="acc-body">
+        <h4>S1 – S2 <span class="badge">School-based</span></h4>
+        <ul>
+          <li>English, Kinyarwanda</li>
+          <li>Mathematics</li>
+          <li>Biology, Chemistry, Physics</li>
+          <li>History, Geography</li>
+          <li>Entrepreneurship, ICT</li>
+          <li>French/Kiswahili (depending on school)</li>
+        </ul>
+
+        <h4>S3 – National Examination</h4>
+        <p class="small">Amasomo asanzwe akorerwamo ibizamini bya Leta (ashobora gutandukana bitewe n’amasomo wahisemo):</p>
+        <ul>
+          <li>English, Kinyarwanda</li>
+          <li>Mathematics</li>
+          <li>Biology, Chemistry, Physics</li>
+          <li>History, Geography</li>
+          <li>Entrepreneurship</li>
+          <li>French cyangwa Kiswahili (nk’iyinjizwa)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A-LEVEL S4–S6 -->
+    <div class="accordion">
+      <div class="acc-head" onclick="this.nextElementSibling.style.display = (this.nextElementSibling.style.display==='block'?'none':'block')">
+        A-LEVEL (S4 – S6) <span>▼</span>
+      </div>
+      <div class="acc-body">
+        <h4>S4 – S5 <span class="badge">By combinations (School-based)</span></h4>
+        <p class="small">Uhitamo combination (urugero): PCB, MCB, PCM, HEG, HGL, LFK, MEG, n’izindi.</p>
+
+        <h4>S6 – National Examination</h4>
+        <p class="small">Ibizamini bya Leta bikorwa hashingiwe kuri <em>combination</em> wahisemo. Urugero:</p>
+        <ul>
+          <li><strong>Science combinations</strong> (urugero PCB/MCB/PCM): Mathematics, Physics, Chemistry, (Biology/Computer Science bitewe n’iyo wahisemo)</li>
+          <li><strong>Humanities/Economics</strong> (HEG/HGL/MEG…): History, Geography, Economics, Literature in English/Kinyarwanda/Kiswahili/French (bitewe n’iyatoranyijwe)</li>
+          <li><strong>Languages/Literature</strong> (LFK…): Literature in English, French, Kinyarwanda/Kiswahili, n’ayandi y’iyongere</li>
+        </ul>
+        <p class="small">TVET tracks zifite amasomo yihariye ajyana n’umwuga (zishobora gutandukana n’aya hejuru).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <main>
+    <h2>Ibyerekeye Niyo Academy Group</h2>
+    <p>Niyo Academy Group ni ishuri rifasha urubyiruko kwiga neza no guhanga udushya.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Niyo Academy Group</p>
+     <p>Email: nniyo368@gmail.com | Tel: 0721792914</p>
+  </footer>
+
+
+
